@@ -1,7 +1,5 @@
 layout: post
 title: "Urwid and You: Part One"
-category: 
-tags: []
 ---
 {% include JB/setup %}
 
