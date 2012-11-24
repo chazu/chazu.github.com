@@ -1,9 +1,10 @@
+---
 layout: post
 title: "Urwid and You: Part One"
 ---
 {% include JB/setup %}
 
- - What urwid is
+# What urwid is
 
    \[Urwid\](http://excess.org/urwid/) is an open-source text-based user interface library written for use in Python by Ian Ward. It's quite feature-rich, and very well documented, however for users of curses it may be a bit difficult to adjust at first. Let's take a look at some of the very basic elements of programming with urwid, starting with installation.
  
