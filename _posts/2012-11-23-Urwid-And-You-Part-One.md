@@ -6,11 +6,11 @@ title: "Urwid and You: Part One"
 
 # What urwid is
 
-   \[Urwid\](http://excess.org/urwid/) is an open-source text-based user interface library written for use in Python by Ian Ward. It's quite feature-rich, and very well documented, however for users of curses it may be a bit difficult to adjust at first. Let's take a look at some of the very basic elements of programming with urwid, starting with installation.
+   [Urwid](http://excess.org/urwid/) is an open-source text-based user interface library written for use in Python by Ian Ward. It's quite feature-rich, and very well documented, however for users of curses it may be a bit difficult to adjust at first. Let's take a look at some of the very basic elements of programming with urwid, starting with installation.
  
 # Installing urwid
 
-   Urwid can be downloaded from its \[homepage\](http://excess.org/urwid/) and the source can be obtained from github or through the project's Mercurial repository. Additionally, ubuntu users should be able to install the library using the command:
+   Urwid can be downloaded from its [homepage](http://excess.org/urwid/) and the source can be obtained from github or through the project's Mercurial repository. Additionally, ubuntu users should be able to install the library using the command:
 
    sudo apt-get install urwid-python
 
@@ -63,7 +63,7 @@ DON'T PRESS THE BUTTON!  Once you've run this script, add a couple of lines:
 >   butten = urwid.Button("Release the Kraken!")
 >   other_butten = urwid.Button("Pew Pew Lasers")
 >
->   pile = urwid.Pile(\[butten, other_butten\])
+>   pile = urwid.Pile([butten, other_butten])
 >
 >   container = urwid.Filler(butten)
 >
