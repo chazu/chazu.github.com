@@ -18,15 +18,15 @@ We've already seen that Urwid can package several small widgets for us into some
 > other_butten = urwid.Button("Pew Pew Lasers!")
 > last_butten = urwid.Button("Anti-Yeti Missiles")
 > 
-> button_pile = urwid.Pile([butten, other_butten, last_butten])
+> button_pile = urwid.Pile(\[butten, other_butten, last_butten\])
 > 
 > checkbox = urwid.CheckBox("Self Destruct?")
 > other_box = urwid.CheckBox("Post to facebook?")
 > final_box = urwid.CheckBox("Checkbox?")
 > 
-> box_pile = urwid.Pile([checkbox, other_box, final_box]) 
+> box_pile = urwid.Pile(\[checkbox, other_box, final_box\]) 
 > 
-> pile_pile = urwid.Pile([button_pile, box_pile])
+> pile_pile = urwid.Pile(\[button_pile, box_pile\])
 > 
 > container = urwid.Filler(pile_pile)
 > 
@@ -42,15 +42,15 @@ Okay, so once again Urwid is smart enough to handle focus for us. Let's say we w
 > other_butten = urwid.Button("Pew Pew Lasers!")
 > last_butten = urwid.Button("Anti-Yeti Missiles")
 > 
-> button_pile = urwid.Pile([butten, other_butten, last_butten])
+> button_pile = urwid.Pile(\[butten, other_butten, last_butten\])
 > 
 > checkbox = urwid.CheckBox("Self Destruct?")
 > other_box = urwid.CheckBox("Post to facebook?")
 > final_box = urwid.CheckBox("Checkbox?")
 > 
-> box_pile = urwid.Pile([checkbox, other_box, final_box]) 
+> box_pile = urwid.Pile(\[checkbox, other_box, final_box\]) 
 > 
-> pile_columns = urwid.Columns([button_pile, box_pile])
+> pile_columns = urwid.Columns(\[button_pile, box_pile\])
 > 
 > container = urwid.Filler(pile_columns)
 > 
@@ -67,17 +67,17 @@ First let's add some lovely borders around our menus. Make the following slight 
 > other_butten = urwid.Button("Pew Pew Lasers!")
 > last_butten = urwid.Button("Anti-Yeti Missiles")
 > 
-> button_pile = urwid.Pile([butten, other_butten, last_butten])
+> button_pile = urwid.Pile(\[butten, other_butten, last_butten\])
 > button_box = urwid.LineBox(button_pile)
 > 
 > checkbox = urwid.CheckBox("Self Destruct?")
 > other_box = urwid.CheckBox("Post to facebook?")
 > final_box = urwid.CheckBox("Checkbox?")
 > 
-> box_pile = urwid.Pile([checkbox, other_box, final_box]) 
+> box_pile = urwid.Pile(\[checkbox, other_box, final_box\]) 
 > box_box = urwid.LineBox(box_pile)
 > 
-> pile_columns = urwid.Columns([button_box, box_box])
+> pile_columns = urwid.Columns(\[button_box, box_box\])
 > pile_columns_box = urwid.LineBox(pile_columns)
 > 
 > container = urwid.Filler(pile_columns_box)
@@ -139,23 +139,23 @@ Alright let's flesh this puppy out so that we can get some interactivity here. T
 > other_butten = urwid.Button("Pew Pew Lasers!", on_press=fire_lasers)
 > last_butten = urwid.Button("Anti-Yeti Missiles", on_press=fire_missiles)
 > 
-> button_pile = urwid.Pile([butten, other_butten, last_butten])
+> button_pile = urwid.Pile(\[butten, other_butten, last_butten\])
 > button_box = urwid.LineBox(button_pile)
 > 
 > checkbox = urwid.CheckBox("Self Destruct?")
 > other_box = urwid.CheckBox("Post to facebook?")
 > final_box = urwid.CheckBox("Checkbox?")
 > 
-> box_pile = urwid.Pile([checkbox, other_box, final_box]) 
+> box_pile = urwid.Pile(\[checkbox, other_box, final_box\]) 
 > box_box = urwid.LineBox(box_pile)
 > 
-> pile_columns = urwid.Columns([button_box, box_box])
+> pile_columns = urwid.Columns(\[button_box, box_box\])
 > pile_columns_box = urwid.LineBox(pile_columns)
 > 
 > status_text = urwid.Text(status)
 > status_box = urwid.LineBox(status_text)
 > 
-> top_level_pile = urwid.Pile([pile_columns_box, status_box])
+> top_level_pile = urwid.Pile(\[pile_columns_box, status_box\])
 > 
 > container = urwid.Filler(top_level_pile)
 > 

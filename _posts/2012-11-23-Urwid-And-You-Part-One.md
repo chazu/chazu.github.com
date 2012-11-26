@@ -63,7 +63,7 @@ DON'T PRESS THE BUTTON!  Once you've run this script, add a couple of lines:
 >   butten = urwid.Button("Release the Kraken!")
 >   other_butten = urwid.Button("Pew Pew Lasers")
 >
->   pile = urwid.Pile([butten, other_butten])
+>   pile = urwid.Pile(\[butten, other_butten\])
 >
 >   container = urwid.Filler(butten)
 >
